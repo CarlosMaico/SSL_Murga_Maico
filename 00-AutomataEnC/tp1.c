@@ -88,20 +88,20 @@ t_estado char_to_enum(char c){
 
 void resultado(FILE* output, t_estado estado)
 {
-    fputs("\t\t", output);
+    fprintf(output, "%-12s/t", ""); // Columna de números (12 caracteres)
     switch (estado) {
         case ESTADO_FINAL_CERO:
         case ESTADO_FINAL_OCTAL:
-            fputs("OCTAL\n", output);
+            fprintf(output, "%-15s\n", "OCTAL"); // Tipo de número (15 caracteres)
             break;
         case ESTADO_FINAL_DECIMAL:
-            fputs("DECIMAL\n", output);
+            fprintf(output, "%-15s\n", "DECIMAL"); // Tipo de número (15 caracteres)
             break;
         case ESTADO_FINAL_HEXADECIMAL:
-            fputs("HEXADECIMAL\n", output);
+            fprintf(output, "%-15s\n", "HEXADECIMAL"); // Tipo de número (15 caracteres)
             break;
-        default :
-            fputs("NO RECONOCIDA\n", output);
+        default:
+            fprintf(output, "%-15s\n", "NO RECONOCIDA"); // Tipo de número (15 caracteres)
     }
 }
 
