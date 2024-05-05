@@ -86,22 +86,24 @@ t_estado char_to_enum(char c){
     }
 }
 
+#define MAX_ANCHO_NUMERO 12 // Máximo ancho para la columna de números
+
 void resultado(FILE* output, t_estado estado)
 {
-    fprintf(output, "\t\t\t\t", ""); // Columna de números (12 caracteres)
+    fprintf(output, "%-*s", MAX_ANCHO_NUMERO, ""); // Columna de números
     switch (estado) {
         case ESTADO_FINAL_CERO:
         case ESTADO_FINAL_OCTAL:
-            fprintf(output, "%-15s\n", "OCTAL"); // Tipo de número (15 caracteres)
+            fprintf(output, "%-15s\n", "OCTAL"); // Tipo de número
             break;
         case ESTADO_FINAL_DECIMAL:
-            fprintf(output, "%-15s\n", "DECIMAL"); // Tipo de número (15 caracteres)
+            fprintf(output, "%-15s\n", "DECIMAL"); // Tipo de número
             break;
         case ESTADO_FINAL_HEXADECIMAL:
-            fprintf(output, "%-15s\n", "HEXADECIMAL"); // Tipo de número (15 caracteres)
+            fprintf(output, "%-15s\n", "HEXADECIMAL"); // Tipo de número
             break;
         default:
-            fprintf(output, "%-15s\n", "NO RECONOCIDA"); // Tipo de número (15 caracteres)
+            fprintf(output, "%-15s\n", "NO RECONOCIDA"); // Tipo de número
     }
 }
 
