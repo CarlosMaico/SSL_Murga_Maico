@@ -88,7 +88,7 @@ t_estado char_to_enum(char c){
 
 void resultado(FILE* output, t_estado estado)
 {
-    fprintf(output, "%-12s/t", ""); // Columna de números (12 caracteres)
+    fprintf(output, "\t\t\t\t", ""); // Columna de números (12 caracteres)
     switch (estado) {
         case ESTADO_FINAL_CERO:
         case ESTADO_FINAL_OCTAL:
