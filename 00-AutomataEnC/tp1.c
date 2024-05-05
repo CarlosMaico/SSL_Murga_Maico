@@ -86,7 +86,8 @@ t_estado char_to_enum(char c){
     }
 }
 
-#define MAX_ANCHO_NUMERO 12 // Máximo ancho para la columna de números
+#define MAX_ANCHO_NUMERO 20 // Máximo ancho para la columna de números
+#define ANCHO_TIPO_NUMERO 20 // Ancho fijo para la columna de tipo de número
 
 void resultado(FILE* output, t_estado estado)
 {
@@ -94,16 +95,16 @@ void resultado(FILE* output, t_estado estado)
     switch (estado) {
         case ESTADO_FINAL_CERO:
         case ESTADO_FINAL_OCTAL:
-            fprintf(output, "%-15s\n", "OCTAL"); // Tipo de número
+            fprintf(output, "%-*s\n", ANCHO_TIPO_NUMERO, "OCTAL"); // Tipo de número
             break;
         case ESTADO_FINAL_DECIMAL:
-            fprintf(output, "%-15s\n", "DECIMAL"); // Tipo de número
+            fprintf(output, "%-*s\n", ANCHO_TIPO_NUMERO, "DECIMAL"); // Tipo de número
             break;
         case ESTADO_FINAL_HEXADECIMAL:
-            fprintf(output, "%-15s\n", "HEXADECIMAL"); // Tipo de número
+            fprintf(output, "%-*s\n", ANCHO_TIPO_NUMERO, "HEXADECIMAL"); // Tipo de número
             break;
         default:
-            fprintf(output, "%-15s\n", "NO RECONOCIDA"); // Tipo de número
+            fprintf(output, "%-*s\n", ANCHO_TIPO_NUMERO, "NO RECONOCIDA"); // Tipo de número
     }
 }
 
