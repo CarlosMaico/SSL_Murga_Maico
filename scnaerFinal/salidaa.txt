@@ -1,0 +1,31 @@
+Token: TIPO_DE_DATO        Lexema: int                  Línea: 3, Columna: 1
+Token: IDENTIFICADOR        Lexema: main                 Línea: 3, Columna: 4
+Token: (        Lexema: (                    Línea: 3, Columna: 8
+Token: TIPO_DE_DATO        Lexema: int                  Línea: 3, Columna: 9
+Token: IDENTIFICADOR        Lexema: argc                 Línea: 3, Columna: 12
+Token: ,        Lexema: ,                    Línea: 3, Columna: 16
+Token: TIPO_DE_DATO        Lexema: char                 Línea: 3, Columna: 17
+Token: IDENTIFICADOR        Lexema: const                Línea: 3, Columna: 21
+Token: MULT Lexema: *                    Línea: 3, Columna: 26
+Token: IDENTIFICADOR        Lexema: argv                 Línea: 3, Columna: 27
+Token: TOKEN NO RECONCOIDO        Lexema: [])                  Línea: 3, Columna: 31
+Token: TOKENNORECONOCIDO        Lexema:                      Línea: 3, Columna: 34
+Token: {        Lexema: {                    Línea: 4, Columna: 1
+Token: TIPO_DE_DATO        Lexema: int                  Línea: 5, Columna: 1
+Token: IDENTIFICADOR        Lexema: x                    Línea: 5, Columna: 4
+Token: IGUAL Lexema: =                    Línea: 5, Columna: 5
+Token: cONSTANTE        Lexema: 2                    Línea: 5, Columna: 6
+Token: ;        Lexema: ;                    Línea: 5, Columna: 7
+Token: IDENTIFICADOR        Lexema: a                    Línea: 6, Columna: 1
+Token: IGUAL Lexema: =                    Línea: 6, Columna: 2
+Token: IDENTIFICADOR        Lexema: x                    Línea: 6, Columna: 3
+Token: ;        Lexema: ;                    Línea: 6, Columna: 4
+ErrorSem: f = x
+               Línea: 7, Columna: 1
+Token: ;        Lexema: ;                    Línea: 7, Columna: 7
+ErrorSem: f = x
+               Línea: 8, Columna: 1
+Token: RETURN Lexema: return               Línea: 8, Columna: 7
+Token: CONSTANTE        Lexema: 0                    Línea: 8, Columna: 13
+Token: ;        Lexema: ;                    Línea: 8, Columna: 14
+Token: }        Lexema: }                    Línea: 9, Columna: 1
